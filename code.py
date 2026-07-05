@@ -33,6 +33,8 @@ if beginning == "start":
             print("test.")
         elif first_choice == "c":
             print("test.")
+            else:
+                print('Input invalid, please type start.')
 
             
         
