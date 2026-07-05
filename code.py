@@ -27,7 +27,8 @@ if beginning == "start":
     def choice_two(first_choice):
         """Handle the outcome of the first choice"""
         if first_choice == "a":
-            print("test")
+            print("You find a map with a marked path to a casle.")
+            choice_three(choice):
         elif first_choice == "b":
             print("test.")
         elif first_choice == "c":
@@ -38,6 +39,7 @@ if beginning == "start":
 
 else:
     print("Please type start.")
-
+def choice_three(second_choice):
+    print('test')
             
         
