@@ -34,14 +34,5 @@ if beginning == "start":
         elif first_choice == "c":
             print("test.")
 
-def choice_three():
-    """Third scene: new set of choices"""
-while True:
-        print("\ntest.")
-        print("test")
-        print("test")
-        print("test")
-        print("test")
-        choice= input("> ").strip().lower()
             
         
