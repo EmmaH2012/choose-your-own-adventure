@@ -41,7 +41,12 @@ else:
     print("Please type start.")
 def choice_three():
     """Third scene: new set of choices"""
-    while True
-    print('test')
+while True:
+        print("\ntest.")
+        print("test")
+        print("test")
+        print("test")
+        print("test")
+        choice= input("> ").strip().lower()
             
         
