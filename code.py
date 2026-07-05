@@ -15,6 +15,6 @@ if begining == "start":
             return choice
         else:
             print("Invalid input. Please type A, B, or C.")
-            if choice= "a": print('test')
+            if choice == "a": print('test')
             
         
