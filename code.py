@@ -3,7 +3,7 @@ if begining == "start":
     print('You wake up in a mysterious forest you have never seen before,' 
     ' you have no idea'  
     ' how you got there.')
-  def first_choice():
+  #first choice
     """Provide the player with initial options and return their choice"""
     while True:
         print("What do you do?")
@@ -15,3 +15,6 @@ if begining == "start":
             return choice
         else:
             print("Invalid input. Please type A, B, or C.")
+            if choice= "a": print('test')
+            
+        
