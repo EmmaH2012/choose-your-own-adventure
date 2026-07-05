@@ -37,7 +37,7 @@ if beginning == "start":
     choice_one()
 
 else:
-    print("Game not started. Goodbye!")
+    print("Please type start.")
 
             
         
