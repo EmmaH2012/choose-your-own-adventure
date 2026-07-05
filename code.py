@@ -33,8 +33,8 @@ if beginning == "start":
             print("vfd .")
         elif first_choice == "c":
             print("dfav.")
-else:
-print('Input invalid, please type start')            
+begining else:
+print('Input invalid, please type start.')           
         
 
             
