@@ -30,9 +30,9 @@ if beginning == "start":
             print("You find a map with a marked path to a casle.")
             choice_three()
         elif first_choice == "b":
-            print("test.")
+            print("vfd .")
         elif first_choice == "c":
-            print("test.")
+            print("dfav.")
             else:
                 print('Input invalid, please type start.')
 
