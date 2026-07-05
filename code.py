@@ -18,7 +18,7 @@ if beginning == "start":
             choice = input("> ").strip().lower()
 
             if choice in ['a', 'b', 'c']:
-                choice_two # Pass the choice to the next function
+                choice_two(choice)# Pass the choice to the next function
                 break
             else:
                 print("Invalid input. Please type A, B, or C.")
@@ -28,7 +28,7 @@ if beginning == "start":
         """Handle the outcome of the first choice"""
         if first_choice == "a":
             print("You find a map with a marked path to a casle.")
-            choice_three
+            choice_three()
         elif first_choice == "b":
             print("test.")
         elif first_choice == "c":
@@ -39,7 +39,10 @@ if beginning == "start":
 
 else:
     print("Please type start.")
-def choice_three(second_choice):
+def choice_three()
+def choice_three():
+    """Third scene: new set of choices"""
+    while True
     print('test')
             
         
