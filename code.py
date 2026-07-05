@@ -39,7 +39,6 @@ if beginning == "start":
 
 else:
     print("Please type start.")
-def choice_three()
 def choice_three():
     """Third scene: new set of choices"""
     while True
