@@ -39,8 +39,3 @@ if beginning == "start":
     choice_one()
 else:
     print("Game not started.")
-  
-        
-
-            
-        
