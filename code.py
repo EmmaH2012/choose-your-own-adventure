@@ -4,7 +4,7 @@ beginning = input("Welcome! Please type Start to begin: ").strip().lower()
 if beginning == "start": story_start()
 else:
     print("Invalid, please type start.")
-story_start()
+def story_start()
  print("You wake up in a mysterious forest you have never seen before. "
         "You have no idea how you got there." )
 
