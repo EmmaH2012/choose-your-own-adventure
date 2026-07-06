@@ -5,10 +5,8 @@ if beginning == "start": story_start()
 else:
     print("Invalid, please type start.")
 story_start()
- print(
-        "You wake up in a mysterious forest you have never seen before. "
-        "You have no idea how you got there."
-    )
+ print("You wake up in a mysterious forest you have never seen before. "
+        "You have no idea how you got there." )
 
     # First choice function
     def choice_one():
