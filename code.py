@@ -1,6 +1,5 @@
 # Start the game
 beginning = input("Welcome! Please type Start to begin: ").strip().lower()
-
 if beginning == "start": story_start()
 else:
     print("Invalid, please type start.")
