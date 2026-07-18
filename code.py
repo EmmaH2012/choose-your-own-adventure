@@ -88,7 +88,7 @@ def outcome_2(second_choice):
 def outcome_3(third_choice):
     if third_choice == "a":
         print("You find a map with a marked path to a castle.")
-        choice_two(third_choice)
+        choice_two
     elif third_choice == "b":
         print("You wander aimlessly and get lost.")
         choice_eight
