@@ -12,14 +12,13 @@ def choice_one():
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            outcome_1(choice)  # ✅ Correct function call
+            outcome_1(choice)
             break
         else:
             print("Invalid input. Please type A, B, or C.")
 
-# Second choice function
+# Handle first choice
 def outcome_1(first_choice):
-    """Handle the outcome of the first choice"""
     if first_choice == "a":
         print("You find a map with a marked path to a castle.")
         choice_two(first_choice)
@@ -40,7 +39,7 @@ def choice_two(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print(f"You chose option {choice.upper()} after finding the map.")
+            outcome_2(choice)
             break
         else:
             print("Invalid input. Please type A, B, or C.")
@@ -55,8 +54,7 @@ def choice_three(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print(f"You chose option {choice.upper()} after crying.")
-            break
+            outcome_3
         else:
             print("Invalid input. Please type A, B, or C.")
 
@@ -70,10 +68,42 @@ def choice_four(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print(f"You chose option {choice.upper()} after calling for help.")
-            break
+            outcome_4
         else:
             print("Invalid input. Please type A, B, or C.")
+
+# Outcome after map decision
+def outcome_2(second_choice):
+    if second_choice == "a":
+        print("You follow the map and get to the castle.")
+    elif second_choice == "b":
+        print("You put the map back but something doesn't feel right.")
+    elif second_choice == "c":
+        print("You put the map in your backpack.")
+
+# Placeholder for another branch
+def outcome_3(third_choice):
+    if third_choice == "a":
+        print("You find a map with a marked path to a castle.")
+        choice_two(third_choice)
+    elif third_choice == "b":
+        print("You wander aimlessly and get lost.")
+    elif third_choice == "c":
+        print("You sit and sing until night falls.")
+
+def outcome_4(fourth_choice):
+    if choice_four == "a":
+        print("You find a map with a marked path to a castle.")
+    elif choice_four == "b":
+        print("You sit down and cry. Nothing changes.")
+    elif choice_four == "c":
+        print("You wander aimlessly and get lost.")
+
+        
+    
+
+
+ 
 
 # Game start logic
 if beginning == "start":
@@ -82,3 +112,4 @@ if beginning == "start":
     choice_one()
 else:
     print("Game not started.")
+
