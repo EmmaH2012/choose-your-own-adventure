@@ -3,7 +3,6 @@ beginning = input("Welcome! Please type Start to begin: ").strip().lower()
 
 # First choice function
 def choice_one():
-    """Provide the player with initial options and return their choice"""
     while True:
         print("\nWhat do you do?")
         print("A = Explore the forest")
@@ -54,7 +53,8 @@ def choice_three(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            outcome_3
+            outcome_3(choice)
+            break
         else:
             print("Invalid input. Please type A, B, or C.")
 
@@ -68,7 +68,8 @@ def choice_four(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            outcome_4
+            outcome_4(choice)
+            break
         else:
             print("Invalid input. Please type A, B, or C.")
 
@@ -76,85 +77,113 @@ def choice_four(previous_choice):
 def outcome_2(second_choice):
     if second_choice == "a":
         print("You follow the map and get to the castle.")
-        choice_five
+        choice_five(second_choice)
     elif second_choice == "b":
         print("You put the map back but something doesn't feel right.")
-        choice_six
+        choice_six(second_choice)
     elif second_choice == "c":
         print("You put the map in your backpack.")
-        choice_seven
+        choice_seven(second_choice)
 
-# Placeholder for another branch
+# Outcome after crying branch
 def outcome_3(third_choice):
     if third_choice == "a":
         print("You find a map with a marked path to a castle.")
-        choice_two
+        choice_two(third_choice)
     elif third_choice == "b":
         print("You wander aimlessly and get lost.")
-        choice_eight
+        choice_eight(third_choice)
     elif third_choice == "c":
         print("You sit and sing until night falls.")
-        choice_nine
+        choice_nine(third_choice)
 
+# Outcome after screaming branch
 def outcome_4(fourth_choice):
-    if choice_four == "a":
+    if fourth_choice == "a":
         print("You find a map with a marked path to a castle.")
-        choice_two
-    elif choice_four == "b":
+        choice_two(fourth_choice)
+    elif fourth_choice == "b":
         print("You sit down and cry. Nothing changes.")
-        choice_three
-    elif choice_four == "c":
+        choice_three(fourth_choice)
+    elif fourth_choice == "c":
         print("You wander aimlessly and get lost.")
-        choice_eight
+        choice_eight(fourth_choice)
 
+# Castle choices
 def choice_five(previous_choice):
     while True:
-        print("\nwhat do you do?")
+        print("\nWhat do you do?")
         print("A = Walk in")
         print("B = Knock on the door")
-        print("C = explore the village")
+        print("C = Explore the village")
+        choice = input("> ").strip().lower()
 
+        if choice in ['a', 'b', 'c']:
+            print("This branch isn't written yet!")
+            break
+        else:
+            print("Invalid input. Please type A, B, or C.")
+
+# Put map back choices
 def choice_six(previous_choice):
     while True:
-        print("\nwhat do you do?")
-        print("A = Pick the map back up and follow it")
-        print("B = Walk mindlessy")
-        print("C = Sit there and sing")
-
-def choice_seven(previous_choice):
-     while True:
         print("\nWhat do you do?")
-        print("A = Walk mindlessy")
-        print(" B = sit there and sing")
-        print("C = use the map")
-# choice for walk mindlessly 
+        print("A = Pick the map back up and follow it")
+        print("B = Walk mindlessly")
+        print("C = Sit there and sing")
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("This branch isn't written yet!")
+            break
+        else:
+            print("Invalid input. Please type A, B, or C.")
+
+# Keep map choices
+def choice_seven(previous_choice):
+    while True:
+        print("\nWhat do you do?")
+        print("A = Walk mindlessly")
+        print("B = Sit there and sing")
+        print("C = Use the map")
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("This branch isn't written yet!")
+            break
+        else:
+            print("Invalid input. Please type A, B, or C.")
+
+# Walk mindlessly
 def choice_eight(previous_choice):
     while True:
         print("\nWhat do you do?")
-        print("A = keep walking")
-        print("B = sleep")
+        print("A = Keep walking")
+        print("B = Sleep")
         print("C = Dance with no music")
-#Singing choice
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("This branch isn't written yet!")
+            break
+        else:
+            print("Invalid input. Please type A, B, or C.")
+
+# Singing branch
 def choice_nine(previous_choice):
     while True:
         print("\nWhat do you do?")
-        print("A = sleep")
+        print("A = Sleep")
         print("B = Dance with no music")
-        print("C = walk around")
+        print("C = Walk around")
+        choice = input("> ").strip().lower()
 
+        if choice in ['a', 'b', 'c']:
+            print("This branch isn't written yet!")
+            break
+        else:
+            print("Invalid input. Please type A, B, or C.")
 
-
-    
-
-
-
-
-
-        
-    
-
-
- 
 
 # Game start logic
 if beginning == "start":
@@ -163,4 +192,5 @@ if beginning == "start":
     choice_one()
 else:
     print("Game not started.")
+
 
