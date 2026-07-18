@@ -76,10 +76,13 @@ def choice_four(previous_choice):
 def outcome_2(second_choice):
     if second_choice == "a":
         print("You follow the map and get to the castle.")
+        choice_five
     elif second_choice == "b":
         print("You put the map back but something doesn't feel right.")
+        choice_six
     elif second_choice == "c":
         print("You put the map in your backpack.")
+        choice_seven
 
 # Placeholder for another branch
 def outcome_3(third_choice):
@@ -88,16 +91,64 @@ def outcome_3(third_choice):
         choice_two(third_choice)
     elif third_choice == "b":
         print("You wander aimlessly and get lost.")
+        choice_eight
     elif third_choice == "c":
         print("You sit and sing until night falls.")
+        choice_nine
 
 def outcome_4(fourth_choice):
     if choice_four == "a":
         print("You find a map with a marked path to a castle.")
+        choice_two
     elif choice_four == "b":
         print("You sit down and cry. Nothing changes.")
+        choice_three
     elif choice_four == "c":
         print("You wander aimlessly and get lost.")
+        choice_eight
+
+def choice_five(previous_choice):
+    while True:
+        print("\nwhat do you do?")
+        print("A = Walk in")
+        print("B = Knock on the door")
+        print("C = explore the village")
+
+def choice_six(previous_choice):
+    while True:
+        print("\nwhat do you do?")
+        print("A = Pick the map back up and follow it")
+        print("B = Walk mindlessy")
+        print("C = Sit there and sing")
+
+def choice_seven(previous_choice):
+     while True:
+        print("\nWhat do you do?")
+        print("A = Walk mindlessy")
+        print(" B = sit there and sing")
+        print("C = use the map")
+# choice for walk mindlessly 
+def choice_eight(previous_choice):
+    while True:
+        print("\nWhat do you do?")
+        print("A = keep walking")
+        print("B = sleep")
+        print("C = Dance with no music")
+#Singing choice
+def choice_nine(previous_choice):
+    while True:
+        print("\nWhat do you do?")
+        print("A = sleep")
+        print("B = Dance with no music")
+        print("C = walk around")
+
+
+
+    
+
+
+
+
 
         
     
