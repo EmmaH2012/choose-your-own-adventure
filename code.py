@@ -22,27 +22,33 @@ def choice_two(first_choice):
     """Handle the outcome of the first choice"""
     if first_choice == "a":
         print("You find a map with a marked path to a castle.")
-        choice_three(choice)
+        choice_three(first_choice)
     elif first_choice == "b":
         print("You sit down and cry. Nothing changes.")
-         choice_four(choice) # pyright: ignore[reportUndefinedVariable]
-   
+        choice_four(first_choice)
     elif first_choice == "c":
         print("You scream for help, but no one answers.")
+        # Could add another branch here
 
-# Third choice function (placeholder)
-def choice_three(second_choice):
-     """Provide the player with initial options and return their choice"""
+# Third choice function
+def choice_three(previous_choice):
+    """Second stage after finding the map"""
     while True:
         print("\nWhat do you do?")
         print("A = Follow the map")
-        print("B =  put the map back")
-        print("C = keep the map but not follow it.")
+        print("B = Put the map back")
+        print("C = Keep the map but not follow it")
         choice = input("> ").strip().lower()
 
-def choice_four(second_choice):
+        if choice in ['a', 'b', 'c']:
+            print(f"You chose option {choice.upper()} after finding the map.")
+            break
+        else:
+            print("Invalid input. Please type A, B, or C.")
 
-         """Provide the player with initial options and return their choice"""
+# Fourth choice function
+def choice_four(previous_choice):
+    """Second stage after crying"""
     while True:
         print("\nWhat do you do?")
         print("A = Explore the forest")
@@ -55,14 +61,6 @@ def choice_four(second_choice):
             break
         else:
             print("Invalid input. Please type A, B, or C.")
-
-
-        if choice in ['a', 'b', 'c']:
-            (choice)  # Pass the choice to the next function
-            break
-        else:
-            print("Invalid input. Please type A, B, or C.")
-
 
 # Game start logic
 if beginning == "start":
