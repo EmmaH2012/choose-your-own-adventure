@@ -119,8 +119,7 @@ def choice_five(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print("This branch isn't written yet!")
-            break
+            outcome_5(choice)
         else:
             print("Invalid input. Please type A, B, or C.")
 
@@ -134,7 +133,7 @@ def choice_six(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print("This branch isn't written yet!")
+            outcome_6(choice)
             break
         else:
             print("Invalid input. Please type A, B, or C.")
@@ -149,8 +148,7 @@ def choice_seven(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print("This branch isn't written yet!")
-            break
+            outcome_7(choice)
         else:
             print("Invalid input. Please type A, B, or C.")
 
@@ -164,7 +162,7 @@ def choice_eight(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print("This branch isn't written yet!")
+            outcome_8(choice)
             break
         else:
             print("Invalid input. Please type A, B, or C.")
@@ -179,10 +177,58 @@ def choice_nine(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print("This branch isn't written yet!")
+            outcome_9(choice)
             break
         else:
             print("Invalid input. Please type A, B, or C.")
+
+def outcome_5(fifth_choice):
+    if fifth_choice == "a":
+        print("You walk in to what looks like a meeting of multiple diffrent cretures an elf looks at you and says 'we have been expecting you'")  
+    if fifth_choice == "b":
+        print(" A girl in a fancy dress and a crown opens the door and invites you inside saying 'I have been expecting you.'")  
+    if fifth_choice == "c":
+        print (" you walk around the village and find a market")
+
+def outcome_6(sixth_choice):
+    if sixth_choice == "a":
+        print("you follow the map to the castle.")
+    if sixth_choice == "b":
+        print("You wander aimlessly and get lost.")
+    if sixth_choice == "c":
+         print("You sit and sing until night falls.")
+
+def outcome_7(seventh_choice):
+    if seventh_choice == "a":
+        print("You wander aimlessly and get lost.")
+    if seventh_choice == "b":
+        print("You sit and sing until night falls.")
+    if seventh_choice == "c":
+        print("you follow the map to the castle.")
+
+def outcome_8(eighth_choice):
+    if eighth_choice == "a":
+        print("You wander till you find a castle")
+    if eighth_choice == "b":
+     print("You sleep until the next day")
+    if eighth_choice == "c":
+        print("you dance until you hear somthing behind you")
+
+def outcome_9(ninth_choice):
+    if ninth_choice == "a":
+        print("you sleep until the next day")
+    if ninth_choice == "b":
+        print("you dance until you hear somthing behind you")
+    if ninth_choice == "c":
+        print("You wander aimlessly and get lost.")
+
+    
+
+
+
+
+
+
 
 
 # Game start logic
