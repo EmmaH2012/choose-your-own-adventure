@@ -152,7 +152,7 @@ def choice_seven(previous_choice):
         else:
             print("Invalid input. Please type A, B, or C.")
 
-# Walk mindlessly
+#  after Walk mindlessly 
 def choice_eight(previous_choice):
     while True:
         print("\nWhat do you do?")
@@ -167,7 +167,7 @@ def choice_eight(previous_choice):
         else:
             print("Invalid input. Please type A, B, or C.")
 
-# Singing branch
+# after Singing branch
 def choice_nine(previous_choice):
     while True:
         print("\nWhat do you do?")
@@ -188,48 +188,128 @@ def outcome_5(fifth_choice):
         choice_ten(fifth_choice)
     if fifth_choice == "b":
         print(" A girl in a fancy dress and a crown opens the door and invites you inside saying 'I have been expecting you.'") 
-        choice 
+        choice_eleven(fifth_choice) 
     if fifth_choice == "c":
         print (" you walk around the village and find a market")
+        choice_twelve(fifth_choice)
 
 def outcome_6(sixth_choice):
     if sixth_choice == "a":
         print("you follow the map to the castle.")
+        choice_five(sixth_choice)
     if sixth_choice == "b":
         print("You wander aimlessly and get lost.")
+        choice_eight(sixth_choice)
     if sixth_choice == "c":
          print("You sit and sing until night falls.")
-
+         choice_nine(sixth_choice)
 def outcome_7(seventh_choice):
     if seventh_choice == "a":
         print("You wander aimlessly and get lost.")
+        choice_eight(seventh_choice)
     if seventh_choice == "b":
         print("You sit and sing until night falls.")
+        choice_nine(seventh_choice)
     if seventh_choice == "c":
         print("you follow the map to the castle.")
+        choice_five(seventh_choice)
 
 def outcome_8(eighth_choice):
     if eighth_choice == "a":
         print("You wander till you find a castle")
+        choice_five(eighth_choice)
     if eighth_choice == "b":
      print("You sleep until the next day")
+     choice_thirteen(eighth_choice)
     if eighth_choice == "c":
         print("you dance until you hear somthing behind you")
+        choice_fourteen(eighth_choice)
 
 def outcome_9(ninth_choice):
     if ninth_choice == "a":
         print("you sleep until the next day")
+        choice_thirteen(ninth_choice)
     if ninth_choice == "b":
         print("you dance until you hear somthing behind you")
+        choice_fourteen(ninth_choice)
     if ninth_choice == "c":
         print("You wander aimlessly and get lost.")
-
+        choice_eight(ninth_choice)
+# castle meeting after walking in
 def choice_ten(previous_choice):
     while True:
         print("\nWhat do you do?")
         print("A = Ask how do they know you")
         print("B = Run away")
         print("C = Ask where you are")
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("no outcome yet!")
+        else:
+         print("Invalid input. Please type A, B, or C.")
+# princess meet after knocking
+def choice_eleven(previous_choice):
+    while True:
+        print("\nWhat do you do?")
+        print("A = ask how does she know you ")
+        print("B = Run away")
+        print("C = come inside")
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("no outcome yet!")
+        else:
+         print("Invalid input. Please type A, B, or C.")
+# market after explore village
+def choice_twelve(previous_choice):
+    while True:
+        print("\nWhat do you do?")
+        print("A = talk to some of the villagers")
+        print("B = buy some food")
+        print("C = walk around and look at everything")
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("no outcome yet!")
+        else:
+         print("Invalid input. Please type A, B, or C.")
+         
+        
+        
+#after sleeping
+def choice_thirteen(previous_choice):
+     while True:
+        print("\nWhat do you do?")
+        print("A = try to find somone")
+        print("B = climb a tree")
+        print("C = explore the forest")
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("no outcome yet!")
+        else:
+         print("Invalid input. Please type A, B, or C.")
+# after dancing
+def choice_fourteen(previous_choice):
+    while True:
+        print("\nWhat do you do?")
+        print("A = Try to fight")
+        print("B = Turn around to see who they are")
+        print("C = Ask who they are")
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("no outcome yet!")
+        else:
+         print("Invalid input. Please type A, B, or C.")
+
+
+
+
+
+
+
 
     
 
