@@ -245,7 +245,7 @@ def choice_ten(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print("no outcome yet!")
+            outcome_10(choice)       
         else:
          print("Invalid input. Please type A, B, or C.")
 # princess meet after knocking
@@ -258,7 +258,7 @@ def choice_eleven(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print("no outcome yet!")
+            outcome_11(choice)
         else:
          print("Invalid input. Please type A, B, or C.")
 # market after explore village
@@ -271,9 +271,10 @@ def choice_twelve(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print("no outcome yet!")
+            outcome_12(choice)
         else:
          print("Invalid input. Please type A, B, or C.")
+
          
         
         
@@ -287,7 +288,7 @@ def choice_thirteen(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print("no outcome yet!")
+            outcome_13(choice)
         else:
          print("Invalid input. Please type A, B, or C.")
 # after dancing
@@ -300,9 +301,50 @@ def choice_fourteen(previous_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print("no outcome yet!")
+            outcome_14(choice)
         else:
          print("Invalid input. Please type A, B, or C.")
+
+def outcome_10(tenth_choice):
+    if tenth_choice == "a":
+        print("they laugh and reply 'The prophcey'")
+    if tenth_choice == "b":
+        print("You run into the village and find a market")
+    if tenth_choice == "c": 
+        print("they laugh and say 'come sit down and let us explain'")
+
+def outcome_11(eleventh_choice):
+    if eleventh_choice == "a":
+        print("she giggles 'The prophecy of course!'")
+    if eleventh_choice == "b":
+        print(" you run into the village and find a market")
+    if eleventh_choice == "c":
+        print("she sets a table for tea and offers you a seat")
+
+def outcome_12(twelth_choice):
+    if twelth_choice == "a":
+        print(" You find out this village is very friendly! a group of people offered for you to come to thier house for lunch")
+    if twelth_choice == "b":
+        print("you buy some food and you sit down at a bench to eat")
+    if twelth_choice == "c":
+        print("You find a women selling weird looking books")
+def outcome_13(thirteenth_choice):
+    if thirteenth_choice == "a":
+        print("you walk until you find a castle with a village")
+    if thirteenth_choice == "b":
+        print("You climb a big tree you feel relaxed until you hear the rusling of somone in the tree with you")
+    if thirteenth_choice == "c":
+        print("you find a map leading to a castle")
+def outcome_14(fourteenth_choice):
+    if fourteenth_choice == "a":
+        print("You turn around to fight then see whoever was standing behind you knock you off you feet")
+    if fourteenth_choice == "b":
+        print("you turn around to find this little girl standing behind you")
+    if fourteenth_choice == "c":
+        print("You turn around to ask who they are and see a young lady who looks like shes dressed for battle who says 'I'm Ivy I'm here to bring you to the castle.'")
+    
+
+
 
 
 
