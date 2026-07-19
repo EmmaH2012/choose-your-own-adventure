@@ -362,13 +362,13 @@ def outcome_14(fourteenth_choice):
 def choice_15(fifteenth_choice):
     while True:
         print("\nWhat do you do?")
-        print("A = ask about the prohecy")
+        print("A = ask about the prophecy")
         print("B = Run")
         print("C = ask for food")
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print("sorry this game is still in development. Thats all we have right now.")
+            outcome_15(choice)
         else:
          print("Invalid input. Please type A, B, or C.")
 
@@ -381,7 +381,7 @@ def choice_16(sixteenth_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print("sorry this game is still in development. Thats all we have right now.")
+            outcome_16(choice)
         else:
          print("Invalid input. Please type A, B, or C.")
         
@@ -394,7 +394,7 @@ def choice_17(seventeenth_choice):
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print("sorry this game is still in development. Thats all we have right now.")
+            outcome_17(choice)
         else:
          print("Invalid input. Please type A, B, or C.")
 
@@ -502,6 +502,21 @@ def choice_25(twentyfifth_choice):
         else:
          print("Invalid input. Please type A, B, or C.")
 
+def outcome_15(fifteenth_choice):
+    if fifteenth_choice == "a":
+     print("They tell you to sit down so they can explain")
+     if fifteenth_choice == "b":
+         print("you run into the village and find a market")
+     if fifteenth_choice == "c":
+         print("They wisper amongst themselfs then finally concluded 'we will get food we didnt take these needs into consiteration, here we will show you to your room and some food is being deliverd there'")
+
+def outcome_16(sixteenth_choice):
+    if sixteenth_choice == "a":
+        print("some guards stop you before you could fight them ")
+    if sixteenth_choice == "b":
+        print("They tell you to sit down so they can explain")
+    if sixteenth_choice == "c":
+        print(" they explan that their is a prophecy and their kingdom is in trouble, they didnt explain more because they insisted on you going to bed.")
 # Game start logic
 if beginning == "start":
     print("You wake up in a mysterious forest you have never seen before. "
