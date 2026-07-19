@@ -184,7 +184,7 @@ def choice_nine(previous_choice):
 
 def outcome_5(fifth_choice):
     if fifth_choice == "a":
-        print("You walk in to what looks like a meeting of multiple diffrent cretures an elf looks at you and says 'we have been expecting you'")  
+        print("You walk in to what looks like a meeting of multiple diffrent cretures, an elf looks at you and says 'we have been expecting you'")  
         choice_ten(fifth_choice)
     if fifth_choice == "b":
         print(" A girl in a fancy dress and a crown opens the door and invites you inside saying 'I have been expecting you.'") 
