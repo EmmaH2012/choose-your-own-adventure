@@ -113,8 +113,8 @@ def outcome_4(fourth_choice):
 def choice_five(previous_choice):
     while True:
         print("\nWhat do you do?")
-        print("A = Walk in")
-        print("B = Knock on the door")
+        print("A = Walk in the castle")
+        print("B = Knock on the castle door")
         print("C = Explore the village")
         choice = input("> ").strip().lower()
 
@@ -330,25 +330,35 @@ def outcome_11(eleventh_choice):
 def outcome_12(twelth_choice):
     if twelth_choice == "a":
         print(" You find out this village is very friendly! a group of people offered for you to come to thier house for lunch")
+        choice_19(twelth_choice)
     if twelth_choice == "b":
         print("you buy some food and you sit down at a bench to eat")
+        choice_20(twelth_choice)
     if twelth_choice == "c":
         print("You find a women selling weird looking books")
+        choice_21(twelth_choice)
+
 def outcome_13(thirteenth_choice):
     if thirteenth_choice == "a":
         print("you walk until you find a castle with a village")
+        choice_five(thirteenth_choice)
     if thirteenth_choice == "b":
         print("You climb a big tree you feel relaxed until you hear the rusling of somone in the tree with you")
+        choice_22(thirteenth_choice)
     if thirteenth_choice == "c":
         print("you find a map leading to a castle")
+        choice_two(thirteenth_choice)
+
 def outcome_14(fourteenth_choice):
     if fourteenth_choice == "a":
         print("You turn around to fight then see whoever was standing behind you knock you off you feet")
+        choice_23(fourteenth_choice)
     if fourteenth_choice == "b":
         print("you turn around to find this little girl standing behind you")
+        choice_24(fourteenth_choice)
     if fourteenth_choice == "c":
         print("You turn around to ask who they are and see a young lady who looks like shes dressed for battle who says 'I'm Ivy I'm here to bring you to the castle.'")
-    
+        choice_25(fourteenth_choice)
 def choice_15(fifteenth_choice):
     while True:
         print("\nWhat do you do?")
@@ -394,6 +404,97 @@ def choice_18(eighteenth_choice):
         print("A = sit down")
         print("B = question about whats in the tea")
         print("C = Decline")
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("sorry this game is still in development. Thats all we have right now.")
+        else:
+         print("Invalid input. Please type A, B, or C.")
+
+def choice_19(nineteenth_choice):
+    while True:
+        print("\nWhat do you do?")
+        print("A = come and eat lunch with them")
+        print("B = decline")
+        print("C = buy food at the market to bring")
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("sorry this game is still in development. Thats all we have right now.")
+        else:
+         print("Invalid input. Please type A, B, or C.")
+
+def choice_20(twentyith_choice):
+    while True:
+        print("\nWhat do you do?")
+        print("A = finish up the meal and go to the castle")
+        print("B = finish and try to find a place to stay for the night")
+        print("C = sleep on the bench")
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("sorry this game is still in development. Thats all we have right now.")
+        else:
+         print("Invalid input. Please type A, B, or C.")
+
+def choice_21(twentyfirst_choice):
+    while True:
+        print("\nWhat do you do?")
+        print("A = buy a random book")
+        print("B = walk away quickly")
+        print("C = ask about the books.")
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("sorry this game is still in development. Thats all we have right now.")
+        else:
+         print("Invalid input. Please type A, B, or C.")
+
+def choice_22(twentysecond_choice):
+    while True:
+        print("\nWhat do you do?")
+        print(" A = fight")
+        print("B = climb down the tree")
+        print("C = scream and fall from the tess ")
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("sorry this game is still in development. Thats all we have right now.")
+        else:
+         print("Invalid input. Please type A, B, or C.")
+
+def choice_23(twentythird_choice):
+    while True:
+        print("\nWhat do you do?")
+        print("A = try to punch them")
+        print("B = yell at them")
+        print("C = look up to see who they are")
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("sorry this game is still in development. Thats all we have right now.")
+        else:
+         print("Invalid input. Please type A, B, or C.")
+
+def choice_24(twentyfourth_choice):
+    while True:
+        print("\nWhat do you do?")
+        print("A = yell at the girl for scaring you")
+        print("B = see if shes all right")
+        print("C = ask who she is")
+        choice = input("> ").strip().lower()
+
+        if choice in ['a', 'b', 'c']:
+            print("sorry this game is still in development. Thats all we have right now.")
+        else:
+         print("Invalid input. Please type A, B, or C.")
+
+def choice_25(twentyfifth_choice):
+    while True:
+        print("\nWhat do you do?")
+        print("A = get up and go with her")
+        print("B = ask a bunch of questions")
+        print("C = start singing")
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
