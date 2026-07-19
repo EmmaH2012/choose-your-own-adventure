@@ -185,8 +185,10 @@ def choice_nine(previous_choice):
 def outcome_5(fifth_choice):
     if fifth_choice == "a":
         print("You walk in to what looks like a meeting of multiple diffrent cretures an elf looks at you and says 'we have been expecting you'")  
+        choice_ten(fifth_choice)
     if fifth_choice == "b":
-        print(" A girl in a fancy dress and a crown opens the door and invites you inside saying 'I have been expecting you.'")  
+        print(" A girl in a fancy dress and a crown opens the door and invites you inside saying 'I have been expecting you.'") 
+        choice 
     if fifth_choice == "c":
         print (" you walk around the village and find a market")
 
@@ -221,6 +223,13 @@ def outcome_9(ninth_choice):
         print("you dance until you hear somthing behind you")
     if ninth_choice == "c":
         print("You wander aimlessly and get lost.")
+
+def choice_ten(previous_choice):
+    while True:
+        print("\nWhat do you do?")
+        print("A = Ask how do they know you")
+        print("B = Run away")
+        print("C = Ask where you are")
 
     
 
