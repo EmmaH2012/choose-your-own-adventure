@@ -402,12 +402,12 @@ def choice_18(eighteenth_choice):
     while True:
         print("\nWhat do you do?")
         print("A = sit down")
-        print("B = question about whats in the tea")
+        print("B = accuse her of putting somthing in the tea")
         print("C = Decline")
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
-            print("sorry this game is still in development. Thats all we have right now.")
+            outcome_18(choice)
         else:
          print("Invalid input. Please type A, B, or C.")
 
@@ -416,7 +416,7 @@ def choice_19(nineteenth_choice):
         print("\nWhat do you do?")
         print("A = come and eat lunch with them")
         print("B = decline")
-        print("C = buy food at the market to bring")
+        print("C = buy food at the market to bring to their house.")
         choice = input("> ").strip().lower()
 
         if choice in ['a', 'b', 'c']:
@@ -517,6 +517,23 @@ def outcome_16(sixteenth_choice):
         print("They tell you to sit down so they can explain")
     if sixteenth_choice == "c":
         print(" they explan that their is a prophecy and their kingdom is in trouble, they didnt explain more because they insisted on you going to bed.")
+
+def outcome_17(seventeenth_choice):
+    if seventeenth_choice == "a":
+        print('"Perfect!" the princess says "I have tea set up"')
+    if seventeenth_choice == "b":
+        print("You run into the village and find a market.")
+    if seventeenth_choice == "c":
+        print('"I know like it was SO HARD" she says in a sarcastic tone.')
+
+def outcome_18(eighteenth_choice):
+    if eighteenth_choice == "a":
+        print('"Oh good!" she cheers "I have so much to talk to you about!"')
+    if eighteenth_choice == "b":
+        print('"UGH!" she looks at you offended,"are you accusing me of trying to poison somone I just met!"')
+    if eighteenth_choice == "c":
+        print('she looks at you hurt,"are you sure you want to decline?"')
+              
 # Game start logic
 if beginning == "start":
     print("You wake up in a mysterious forest you have never seen before. "
